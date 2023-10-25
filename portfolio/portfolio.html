@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background-image: url(abc.jpeg);
+        background: cover;
+    }
+    .utext{
+        color: white;
+        font-size: larger ;
+        border: 2px solid transparent;
+        width: 25px;
+        height: 25px;
+        transform: translate(114px,5px);
+    }
+    #n1{
+        display: block;
+        text-decoration: none;
+        border: 2px transparent;
+        width: 25px;
+        height:25px;
+        transform:translate(850px,-23px);
+        color: white;
+    }
+    #n2{
+        display: block;
+        text-decoration: none;
+        border: 2px transparent;
+        width: 69px;
+        height: 25px;
+        transform: translate(900px,-46px);
+        color: white;
+}
+    #n3{
+        display: block;
+        text-decoration: none;
+        border: 2px transparent;
+        width: 25px;
+        height:25px;
+        transform:translate(975px,-72px);
+        color: white;
+    }
+    a:visited{
+        color: orange;
+    }
+    input{
+        border: 2px solid white;
+        width:135px;
+        height: 25px;
+        transform: translate(1050px,-100px);
+    }
+
+    .bio{
+        border: 2px transparent;
+        width: 451px;
+        height: 281px;
+        transform: translate(258px,28px);
+    }
+    #t1{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size:xx-large;
+        color: white;
+        
+    }
+    #t2{
+        font-family: cursive;
+        font-size: x-large;
+        color: white;
+    }
+    #p{
+        border: 2px solid transparent;
+        border-radius:50%;
+        width: 185px;
+        height: 185px;
+        transform: translate(799px,-238px);
+        background: transparent;
+    }
+    .p2{
+        border:2px solid transparent;
+        border-radius: 15%;
+        width: 141px;
+        height: 144px;
+        transform: translate(6px,-18px);
+    }
+    .box{
+
+    }
+    #box1{
+        border: 2px solid white;
+        border-radius: 15px;
+        background-image: url(download.jpg);
+        width: 203px;
+        height: 273px;
+        transition:transform 1500ms;
+        }
+        
+    #box1:hover{
+        cursor: pointer;
+        transform: rotatey(180deg);
+    }
+    #box21{
+        border:2px solid white;
+        border-radius: 15px;
+        background-image: url(download2.png);
+        background: cover;
+        width: 203px;
+        height: 273px;
+        transition:transform 1500ms;
+    }
+    #box21:hover{
+        cursor: pointer;
+        transform: rotatey(180deg);
+    }
+    #box31{
+        border:2px solid white;
+        border-radius: 15px;
+        background-image: url(images.jpg);
+        width: 203px;
+        height: 273px;
+        transition:transform 1500ms;
+    }
+    #box31:hover{
+        cursor: pointer;
+        transform: rotatey(180deg);
+    }
+    .box{
+        border: 2px;
+        width: 200px;
+        height: 160px;
+        transform: translate(295px,5px);
+    }
+    .box2{
+        border: 2px;
+        width: 200px;
+        height: 160px;
+        transform: translate(533px,-216px);
+    }
+    .box3{
+        border: 2px;
+        width: 200px;
+        height: 160px;
+        transform: translate(774px,-438px);
+    }
+    .button{
+        border: 2px solid black;
+        border-radius: 28px;
+        background: rgb(255, 0, 0);
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transform: translate(334px,122px);
+    }
+    .button1{
+        border: 2px solid black;
+        border-radius: 28px;
+        background: rgb(255, 0, 0);
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transform: translate(572px,-101px);
+    }
+    .button2{
+        border: 2px solid black;
+        border-radius: 28px;
+        background: rgb(255, 0, 0);
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transform: translate(817px,-322px);
+    }
+    h1{
+        text-align: center;
+    }
+    h3{
+        margin: 5px;
+    }
+    .skills{
+        width: 500px;
+        margin: 60px auto;
+        color: #fff;
+        padding: 20px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+    }
+    .skills li{
+        margin: 20px 0;
+        padding: 10px ;
+
+    }
+    .bar{
+        background: #353b48;
+        display: block;
+        height: 20px;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .bar:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 1px 2px rgba(0,0,0,0.22);
+    }
+    .bar span{
+        height: 20px;
+        float: left;
+        background:linear-gradient(135deg,rgba(235,0,140,1)0%, rgba(252,103,103,1)100%);
+
+    }
+    .Python{
+        width: 85%;
+        animation: Python 3s;
+
+    }
+    .cpp{
+        width: 65%;
+        animation: cpp 3s;
+        
+    }
+    .html{
+        width: 80%;
+        animation: html 3s;
+        
+    }
+    .css{
+        width: 75%;
+        animation: css 3s;
+        
+    }
+    @keyframes Python{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 85%;
+        }
+    }
+    @keyframes cpp{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 65%;
+        }
+    }
+    @keyframes html{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 80%;
+        }
+    }
+    @keyframes css{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 75%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <div class="utext">
+            <p>Prathmesh</p>
+        </div>
+        <div class="nav">
+            <a href="#" id="n1">Home</a>
+            <a href="#" id="n2">About me</a>
+            <a href="#" id="n3">contact</a>
+            <input type="text" placeholder="search">
+        </div>
+    </header>
+    <div class="bio">
+        <div id="t1">
+            <center><p>Prathmesh</p></center>
+        </div>
+        <div id="t2">
+            <p>"Every day is an opportunity for transformation. 
+                I believe in hard work, focus, and never giving up. 
+                Join me as we chase our dreams and conquer challenges."</p>
+        </div>
+    </div>
+    <div class="pht">
+        <div id="p">
+           
+    </div>
+
+    <div class="box">
+        <div id="box1">
+            
+        </div>
+    
+    </div>
+    <button class="button " onclick="#" >Resume</button>
+    <div class="box2">
+        <div id="box21">
+           
+        </div>
+    </div>
+    <button class="button1" onclick="#">project</button>
+    <div class="box3">
+        <div id="box31">
+            
+        </div>
+    </div>
+    <button class="button2" onclick="#">Contact</button>
+
+    <div class="skills">
+        <h1>my skills</h1>
+        <li><h3>Python</h3>
+            <span class="bar"><span class="Python"></span></span>
+        </li>
+        <li><h3>cpp</h3>
+            <span class="bar"><span class="cpp"></span></span>
+        </li>
+        <li><h3>html</h3>
+            <span class="bar"><span class="html"></span></span>
+        </li>
+        <li><h3>css</h3>
+            <span class="bar"><span class="css"></span></span>
+        </li>
+    </div>
+</body>
+</html>
